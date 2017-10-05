@@ -1,0 +1,99 @@
+@font-face {
+    font-family: SouthernAire;
+    src: url("../Fonts/SouthernAire.ttf");
+}
+
+@font-face {
+    font-family: Overseer;
+    src: url("../Fonts/Overseer.otf");
+}
+
+body {
+    background-color: #2E2525;
+}
+
+#mid {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    display: block;
+}
+
+#mid img {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+#agecheckertext {
+    color: white;
+    font-family: 'SouthernAire';
+    font-size: 50px;
+    text-align: center;
+    padding: 200px 0 50px 0;
+}
+
+#agecheckertext2 {
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#agecheckertext3 {
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    text-align: center;
+    margin: -50px 0 -50px 0;
+}
+
+#drop {
+    border: 3px dotted white;
+    border-style: dashed;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#break {
+    height: 100px;
+}
+
+#footercontainer {
+    width: 700px;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+
+#borderL {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+
+#borderR {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#copyright {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}

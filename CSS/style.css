@@ -1,0 +1,285 @@
+/*Custom Fonts*/
+
+@font-face {
+    font-family: SouthernAire;
+    src: url("../Fonts/SouthernAire.ttf");
+}
+
+@font-face {
+    font-family: Overseer;
+    src: url("../Fonts/Overseer.otf");
+}
+
+
+/*Animation*/
+
+@keyframes vatsanim {
+    0% {
+        color: #2E2525;
+    }
+    50% {
+        color: lightgreen;
+    }
+    100% {
+        color: #2E2525;
+    }
+}
+
+#vatsanim {
+    animation-name: vatsanim;
+    animation-duration: 5s;
+    animation-iteration-count: 999;
+}
+
+
+/*Header*/
+
+header {
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    background-color: #2E2525;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#leftcontainer {
+    padding: 10px 0 0 100px;
+    display: block;
+    margin: auto;
+    float: left;
+    width: auto;
+    height: auto;
+    border: 0px solid blue;
+}
+
+#midcontainer {
+    padding: 10px 0 0 50px;
+    display: block;
+    margin: auto;
+    float: left;
+    width: auto;
+    height: auto;
+    border: 0px solid green;
+}
+
+#rightcontainer {
+    padding: 10px 50px 0 0;
+    display: block;
+    margin: auto;
+    float: right;
+    width: auto;
+    height: auto;
+    border: 0px solid red;
+}
+
+#leftcontainer img {
+    width: auto;
+    height: 75px;
+}
+
+#midcontainer img {
+    width: auto;
+    height: 75px;
+}
+
+#rightcontainer img {
+    width: auto;
+    height: 75px;
+}
+
+
+/*Navigation*/
+
+nav {
+    position: relative;
+    float: left;
+    padding: 35px 0 0 0;
+    position: fixed;
+    overflow: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: #2E2525;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav li a.active {
+    background-color: rgb(127, 179, 255);
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+nav .subpage {
+    margin: 0 0 0 20px;
+}
+
+/*Body*/
+
+body {
+    width: 1500px;
+    margin: auto;
+    background-color: #2E2525;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: white;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Overseer';
+    font-weight: normal;
+    font-size: 100px;
+    margin: 100px 100px 0px 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'SouthernAire';
+    font-weight: normal;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Overseer';
+    font-weight: normal;
+    font-size: 75px;
+}
+
+#summary,
+#fallout,
+#fallout2,
+#fallout3,
+#falloutnv,
+#fallout4 {
+    text-align: left;
+    padding: 0 0 0 50px;
+    font-size: 50px;
+}
+
+#summary {
+    background-image: url("../Images/summary.png");
+    font-family: SouthernAire;
+}
+
+#fallout {
+    background-image: url("../Images/fallout1.png");
+}
+
+#fallout2 {
+    background-image: url("../Images/fallout2.png");
+}
+
+#fallout3 {
+    background-image: url("../Images/fallout3.png");
+}
+
+#falloutnv {
+    background-image: url("../Images/falloutnv.png");
+}
+
+#fallout4 {
+    background-image: url("../Images/fallout4.png");
+}
+
+
+/*V.A.T.S.*/
+
+#vtsci img {
+    width: 1000px;
+    height: auto;
+}
+
+
+/*Pip-Boy*/
+
+#vteng img {
+    width: 1000px;
+    height: auto;
+}
+
+#vaultboy img {
+    width: 500px;
+    height: auto;
+    margin: 0 0 0 25%;
+}
+
+
+/*Footer*/
+
+#break {
+    height: 100px;
+}
+
+#footercontainer {
+    width: 700px;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+
+#borderL {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+
+#borderR {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#copyright {
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: black;
+}
+
+/*Legacy Footer CSS*/
+
+/*footer img {
+    width: auto;
+    height: 200px;
+    filter: invert(100%);
+}
+
+footer {
+    text-align: center;
+    font-family: SouthernAire;
+    font-size: 50px;
+}*/
