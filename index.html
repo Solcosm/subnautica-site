@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="This site is dedicated to detailing the history and gameplay of the Fallout series." />
@@ -16,11 +15,9 @@
         function allowDrop(ev) {
             ev.preventDefault();
         }
-
         function drag(ev) {
             ev.dataTransfer.setData("text", ev.target.id);
         }
-
         function drop(ev) {
             ev.preventDefault();
             var data = ev.dataTransfer.getData("text");
@@ -33,17 +30,13 @@
         }
     </script>
 </head>
-
 <body>
     <div id="mid">
         <div id="agecheckertext">
             Are you over the age of 18?
         </div>
-
         <img src="Images/VaultBoy.png" alt="The Vault-Boy" draggable="true" ondragstart="drag(event)" id="drag1">
-
         <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
         <div id="agecheckertext2">
             If so, please move Vault-Boy into the box
         </div>
@@ -67,5 +60,4 @@
         </div>
     </footer>
 </body>
-
 </html>

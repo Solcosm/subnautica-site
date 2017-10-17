@@ -29,16 +29,36 @@
     <aside>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="subpage"><a href="index.html#summary">Summary</a></li>
-                <li class="subpage"><a href="index.html#fallout">Fallout</a></li>
-                <li class="subpage"><a href="index.html#fallout2">Fallout 2</a></li>
-                <li class="subpage"><a href="index.html#fallout3">Fallout 3</a></li>
-                <li class="subpage"><a href="index.html#falloutnv">Fallout: New Vegas</a></li>
-                <li class="subpage"><a href="index.html#fallout4">Fallout 4</a></li>
-                <li><a href="vats.html">V.A.T.S.</a></li>
-                <li><a href="pipboy.html">Pip-Boy</a></li>
-                <li><a href="form.html">Secure Concealed Admissions Manual (S.C.A.M.)</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#summary">Summary</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout">Fallout</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout2">Fallout 2</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout3">Fallout 3</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#falloutnv">Fallout: New Vegas</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout4">Fallout 4</a>
+                </li>
+                <li>
+                    <a href="vats.html">V.A.T.S.</a>
+                </li>
+                <li>
+                    <a href="pipboy.html">Pip-Boy</a>
+                </li>
+                <li>
+                    <a href="form.html">Secure Concealed Admissions Manual (S.C.A.M.)</a>
+                </li>
             </ul>
         </nav>
     </aside>
@@ -63,18 +83,22 @@
             <fieldset>
                 <legend>REGISTRATION FORM</legend>
                 <div id="form_container_top">
+                    <div id="form_reminder">
+                        <em>All fields required</em>
+                    </div>
                     <div id="form_beginning">
-                        <input name="name" type="text" maxlength="30" placeholder="Name">
-                        <input name="address" type="text" maxlength="50" placeholder="Address">
-                        <input name="email" type="email" maxlength="30" placeholder="Email">
+                        <input name="name" type="text" maxlength="30" placeholder="Name" autofocus required>
+                        <input name="address" type="text" maxlength="50" placeholder="Address" required>
+                        <input name="email" type="email" maxlength="30" placeholder="Email" required>
                     </div>
                     <div id="form_right">
                         Date that you filled out this form
                         <br>
-                        <input name="date" type="date">
+                        <input name="date" type="date" required>
                         <br>Telephone number
                         <br>
-                        <input name="phone_number" type="tel" placeholder="+1 (###) ###-####">
+                        <input name="phone_number" type="tel" maxlength="17" placeholder="+# (###) ###-####" pattern="[+]\d{1}[ ][(][0-9][0-9][0-9][)][ ][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]"
+                            required>
                     </div>
                 </div>
                 <div id="form_SPECIAL_container">
@@ -127,12 +151,12 @@
                     using the button below
                     <br>
                     <br>
-                    <input type="file" name="photo_ID">
+                    <input type="file" name="photo_ID" required>
                     <br>
                     <br>Which age range is closest to you (in years)?
                     <br>
                     <br>
-                    <input type="radio" name="platform" value="young"> 1-19
+                    <input type="radio" name="platform" value="young" required> 1-19
                     <br>
                     <input type="radio" name="platform" value="medium"> 20-49
                     <br>
@@ -141,13 +165,13 @@
                     <br>Why are you reserving a spot in one of Vault-Tec's Official Vaults?
                     <br>
                     <br>
-                    <input type="checkbox" name="feedback_type" value="positive"> I want to secure my future in the event of nuclear annihilation
+                    <input type="radio" name="feedback_type" value="positive" required> I want to secure my future in the event of nuclear annihilation
                     <br>
-                    <input type="checkbox" name="feedback_type" value="neutral"> I'm looking for a life radically different than the one I currently have
+                    <input type="radio" name="feedback_type" value="neutral"> I'm looking for a life radically different than the one I currently have
                     <br>
-                    <input type="checkbox" name="feedback_type" value="sarcasm"> I don't have anything better to do than filling out random forms I found at work
+                    <input type="radio" name="feedback_type" value="sarcasm"> I don't have anything better to do than filling out random forms I found at work
                     <br>
-                    <input type="checkbox" name="feedback_type" value="negative"> You don't need to know
+                    <input type="radio" name="feedback_type" value="negative"> You don't need to know
                     <br>
                     <br> Please rate your experience filling out the official Vault-Tec Secure Concealed Admissions Manual (scores
                     are weighed out of 10)
@@ -155,13 +179,21 @@
                     <br>
                     <select name="ratings">
                         <option value="lowest">0</option>
+                        <option value="low">1</option>
+                        <option value="low">2</option>
                         <option value="low">3</option>
+                        <option value="moderate">4</option>
+                        <option value="moderate">5</option>
+                        <option value="moderate">6</option>
                         <option value="moderate">7</option>
-                        <option value="high">10</option>
+                        <option value="high">8</option>
+                        <option value="high">9</option>
+                        <option value="highest">10</option>
                     </select>
                 </div>
                 <div id="form_bottom">
-                    <textarea name="comments" rows="10" cols="50" maxlength="800" placeholder="Please write any comments/concerns with the Secure Concealed Admissions Manual here (max length of 800 characters)"></textarea>
+                    <textarea name="comments" rows="10" cols="50" maxlength="800" placeholder="Please write any comments/concerns with the Secure Concealed Admissions Manual here (max length of 800 characters)"
+                        required></textarea>
                 </div>
                 <div class="buttonCenter">
                     <input type="submit">

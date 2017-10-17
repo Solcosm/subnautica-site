@@ -17,7 +17,7 @@ function points() {
     var total = sp + pp + ep + cp + ip + ap + lp;
     var overall = total - 28;
     document.getElementById("points").innerHTML = Math.abs(overall);
-    if (overall==0) {
+    if (overall == 0) {
         document.getElementById("S").disabled = true;
         document.getElementById("P").disabled = true;
         document.getElementById("E").disabled = true;

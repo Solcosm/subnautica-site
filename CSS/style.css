@@ -199,13 +199,17 @@ form {
 #form_container_top {
     display: inline-block;
 }
+#form_reminder {
+    color: rgb(105, 105, 105);
+    text-align: center;
+}
 #form_beginning {
     padding: 20px;
     width: 250px;
     float: left;
 }
 #form_right {
-    padding: 0 0 0 150px;
+    padding: 0 0 0 200px;
     float: left;
 }
 #form_SPECIAL_container {
@@ -270,8 +274,11 @@ input[type=submit],
     margin: 10px 0px 0px 5px;
     border: 1px solid white;
     background-color: #2E2525;
-    border-radius: 5px;
     color: white;
+}
+.buttonCenter input:hover {
+    background-color: white;
+    color: black;
 }
 /*Footer*/
 #break {
