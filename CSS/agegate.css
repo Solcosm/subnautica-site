@@ -1,6 +1,8 @@
 @font-face {
     font-family: SouthernAire;
-    src: url("../Fonts/SouthernAire.ttf");
+    src: url('../Fonts/southernaire-webfont.woff2') format('woff2'),
+    url('../Fonts/southernaire-webfont.woff') format('woff');
+    /*src: url("../Fonts/SouthernAire.ttf");*/
 }
 @font-face {
     font-family: Overseer;
