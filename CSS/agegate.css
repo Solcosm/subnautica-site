@@ -9,13 +9,9 @@
     src: url('overseer-webfont.woff2') format('woff2'),
     url('overseer-webfont.woff') format('woff');
 }
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
     #mid img, #drop, #agecheckertext2, #agecheckertext3 {
-        /*visibility: hidden;*/
         display: none;
-    }
-    #break {
-        height: 1000px;
     }
 }
 @media screen and (min-width: 1001px) {
@@ -25,7 +21,7 @@
     #agecheckertext-mobile {
         display: none;
     }
-}
+}*/
 button {
     margin: 0px 0px 0px 220px;
     width: 200px;
