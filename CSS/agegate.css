@@ -2,31 +2,31 @@
     font-family: SouthernAire;
     src: url('../Fonts/southernaire-webfont.woff2') format('woff2'),
     url('../Fonts/southernaire-webfont.woff') format('woff');
-    /*src: url("../Fonts/SouthernAire.ttf");*/
 }
 @font-face {
     font-family: Overseer;
-    src: url('overseer-webfont.woff2') format('woff2'),
-    url('overseer-webfont.woff') format('woff');
+    src: url('../Fonts/overseer-webfont.woff2') format('woff2'),
+    url('../Fonts/overseer-webfont.woff') format('woff');
 }
-/*@media screen and (max-width: 1000px) {
-    #mid img, #drop, #agecheckertext2, #agecheckertext3 {
-        display: none;
-    }
+/*MOBILE STUFF*/
+#mid-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
 }
-@media screen and (min-width: 1001px) {
-    button {
-        display: none;
-    }
-    #agecheckertext-mobile {
-        display: none;
-    }
-}*/
+#agecheckertexttop-mobile {
+    color: white;
+    font-family: 'SouthernAire';
+    font-size: 50px;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
 button {
-    margin: 0px 0px 0px 220px;
-    width: 200px;
-    height: 200px;
-    padding: 130px 130px 130px 120px;
+    width: 250px;
+    height: 262px;
     background: url("../Images/VaultBoy.png");
     border: none;
 }
@@ -37,6 +37,38 @@ button {
     text-align: center;
     padding: 50px 0 0 0;
 }
+#footercontainer-mobile {
+    width: 100%;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+#borderL-mobile {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 20%;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+#borderR-mobile {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 20%;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+#footer-mobile img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#copyright-mobile {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+/*DESKTOP STUFF*/
 body {
     background-color: #2E2525;
 }

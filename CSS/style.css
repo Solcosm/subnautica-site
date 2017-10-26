@@ -1,11 +1,13 @@
 /*Custom Fonts*/
 @font-face {
     font-family: SouthernAire;
-    src: url("../Fonts/SouthernAire.ttf");
+    src: url('../Fonts/southernaire-webfont.woff2') format('woff2'),
+    url('../Fonts/southernaire-webfont.woff') format('woff');
 }
 @font-face {
     font-family: Overseer;
-    src: url("../Fonts/Overseer.otf");
+    src: url('../Fonts/overseer-webfont.woff2') format('woff2'),
+    url('../Fonts/overseer-webfont.woff') format('woff');
 }
 /*Animation*/
 @keyframes vatsanim {
@@ -19,6 +21,220 @@
         color: #2E2525;
     }
 }
+@media (max-width: 1000px) {
+    html header {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 0px;
+        display: flex;
+        border: 1px solid green;
+    }
+    html #leftcontainer, html #rightcontainer {
+        display: none;
+    }
+    html #midcontainer {
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+    html #midcontainer img {
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    html aside {
+        border: 1px solid red;
+        position: static;
+        width: 100%;
+    }
+    html nav {
+        width: 100%;
+        padding: 10px 0 10px 0px;
+        position: static;
+        border: 1px solid blue;
+        float: none;
+        overflow: none;
+    }
+    html nav ul {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        border: 1px solid lightblue;
+    }
+    html nav li a {
+        padding: 10px;
+        margin: 0 auto;
+        width: 50%;
+        border: 1px solid yellow;
+    }
+    html nav .subpage {
+        display: none;
+    }
+    html body {
+        width: 100%;
+    }
+    html main {
+        width: 100%;
+        border: 1px solid white;
+    }
+    html article {
+        padding: 0 5% 5% 5%;
+        border: 5px solid darkblue;
+    }
+    html h1 {
+        text-align: center;
+        font-family: 'Overseer';
+        font-weight: normal;
+        font-size: 100px;
+        margin: 100px 100px 0px 100px;
+    }
+    html h2 {
+        text-align: center;
+        font-family: 'SouthernAire';
+        font-weight: normal;
+        font-size: 50px;
+    }
+    html h3 {
+        border: 1px solid orange;
+    }
+    html #summary,
+    html #fallout,
+    html #fallout2,
+    html #fallout3,
+    html #falloutnv,
+    html #fallout4 {
+        text-align: center;
+        padding: 0;
+        font-size: 50px;
+        width: 100%;
+        background-image: none;
+    }
+    html footer {
+        display: none;
+    }
+}
+/*@media (max-width: 1000px) {
+    /*html body {
+        width: 100%;
+    }
+    html header img {
+        border: 1px solid white;
+    }
+    html header {
+        width: 100%;
+        height: 100px;
+        background-color: #2E2525;
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
+    html #leftcontainer, html #rightcontainer {
+        display: none;
+    }
+    html #midcontainer {
+        display: block;
+        margin: 0 0 0 50%;
+    }
+    html aside {
+        text-align: center;
+    }
+    html nav {
+        width: 100%;
+        border: 1px solid red;
+        position: relative;
+        display: none;
+    }
+    html nav ul {
+        margin: -20px 0px 0px -10%;
+        list-style-type: none;
+        width: 100%;
+        background-color: #2E2525;
+        border: 1px solid blue;
+    }
+    html nav li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        border: 1px solid green;
+    }
+    html nav li a.active {
+        background-color: rgb(127, 179, 255);
+        color: white;
+    }
+    html nav li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+    html nav .subpage {
+        display: none;
+    }
+    html body {
+        width: 100%;
+        margin: auto;
+        background-color: #2E2525;
+        font-family: 'Segoe UI';
+        font-size: 16px;
+        color: white;
+    }
+    html main {
+        width: 100%;
+        margin: auto;
+    }
+    html h1 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Overseer';
+        font-weight: normal;
+        font-size: 100px;
+        margin: 100px 100px 0px 100px;
+    }
+    html h2 {
+        width: 100%;
+        text-align: center;
+        font-family: 'SouthernAire';
+        font-weight: normal;
+        font-size: 50px;
+    }
+    html h3 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Overseer';
+        font-weight: normal;
+        font-size: 75px;
+    }
+    html #summary,
+    html #fallout,
+    html #fallout2,
+    html #fallout3,
+    html #falloutnv,
+    html #fallout4 {
+        display: none;
+        width: 100%;
+        text-align: left;
+        padding: 0 0 0 0px;
+        font-size: 50px;
+    }
+    html #summary {
+        background-image: url("../Images/summary.png");
+        font-family: SouthernAire;
+    }
+    html #fallout {
+        background-image: url("../Images/fallout1.png");
+    }
+    html #fallout2 {
+        background-image: url("../Images/fallout2.png");
+    }
+    html #fallout3 {
+        background-image: url("../Images/fallout3.png");
+    }
+    html #falloutnv {
+        background-image: url("../Images/falloutnv.png");
+    }
+    html #fallout4 {
+        background-image: url("../Images/fallout4.png");
+    }
+}*/
 #vatsanim {
     animation-name: vatsanim;
     animation-duration: 5s;
@@ -104,6 +320,9 @@ nav li a:hover:not(.active) {
     color: white;
 }
 nav .subpage {
+    margin: 0 0 0 20px;
+}
+nav .devportal {
     margin: 0 0 0 20px;
 }
 /*Body*/
